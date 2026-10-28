@@ -18,5 +18,12 @@ A lightweight Django web application that fetches real-time weather details for 
 
 1. **Clone the repository:**
    ```bash
-   git clone [https://github.com/your-username/weather-app.git](https://github.com/your-username/weather-app.git)
-   cd weatherproject
+   git clone (https://github.com/Athena2805/Weather_Project.git)
+   cd weatherproject/weather
+
+   python -m venv venv
+   source venv/bin/activate  # On Windows use: venv\Scripts\activate
+   pip install django requests
+   python manage.py makemigrations
+   python manage.py migrate
+   python manage.py runserver
